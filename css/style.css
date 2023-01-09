@@ -36,6 +36,8 @@ main{
     width: 100%;
     z-index: -1;
 }
+
+
 .愛心{
     transform: translateY(-45%);
     width: 100%;
@@ -332,6 +334,13 @@ p{
     .標題 {
         scale: 1;
         margin-top: 150px;
+    }
+    .small{
+        transform: translateY(-40%);
+    }
+
+    .love{
+        transform: translateY(-150%);
     }
 
     html{
