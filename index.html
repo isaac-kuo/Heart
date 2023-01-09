@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-storage-compat.js"></script>
+
+  <script src="./js/Jquery.js"></script>
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto&display=swap"
+    rel="stylesheet">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+  <a class="up" id="divUp" onclick="keepUpTheScroll()">
+
+    <svg id="up-size" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:svgjs="http://svgjs.com/svgjs" width="25" height="25" x="0" y="0" viewBox="0 0 24 24"
+      style="enable-background:new 0 0 512 512" xml:space="preserve">
+      <g>
+        <path id="upp"
+          d="M12,24A12,12,0,1,0,0,12,12.013,12.013,0,0,0,12,24ZM6.269,12.4,11.356,7.25a.9.9,0,0,1,1.288,0L17.731,12.4a.924.924,0,0,1-.644,1.575H6.913A.924.924,0,0,1,6.269,12.4Z"
+          fill="#FFFFFF" data-original="#000000"></path>
+      </g>
+    </svg>
+  </a>
+
+  <script>
+    function keepUpTheScroll() {
+      var t = document.documentElement.scrollTop || document.body.scrollTop;
+      var up = document.getElementById('divUp')
+      t -= 1800 // 让卷去的距离减小
+
+      document.documentElement.scrollTop = document.body.scrollTop = t
+
+    }
+  </script>
+
+
+  <a id="divDown" class="down" onclick="keepDownTheScroll()">
+    <svg id="down-size" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:svgjs="http://svgjs.com/svgjs" width="100" height="100" x="0" y="0" viewBox="0 0 24 24"
+      style="enable-background:new 0 0 512 512" xml:space="preserve">
+      <g>
+        <path
+          d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm5.731,11.6L12.644,16.75a.9.9,0,0,1-1.288,0L6.269,11.6a.924.924,0,0,1,.644-1.575H17.087A.924.924,0,0,1,17.731,11.6Z"
+          fill="#FFFFFF" data-original="#000000"></path>
+      </g>
+    </svg>
+  </a>
+  <script>
+    function keepDownTheScroll() {
+      var t = document.documentElement.scrollTop || document.body.scrollTop;
+      var up = document.getElementById('divDown')
+      t += 1800 // 让卷去的距离减小
+
+      document.documentElement.scrollTop = document.body.scrollTop = t
+    }
+  </script>
+
+
+
+
+  <div class="top-text a">
+    <h3>EARTHAND</h3>
+  </div>
+  <div class="top-text aa">
+    <h3>GROUP18</h3>
+  </div>
+
+  <a href="https://juju9109.github.io/earthHAND/"><img src="img/50.png" class="大圖 bigpx" alt=""></a>
+  <main>
+    <div class="top-text big">
+      <div style="color: aliceblue;">EARTHAND</div>
+    </div>
+    <div class="top-text bigg">
+      <div style="color: aliceblue;">EARTHAND-SDGs</div>
+    </div>
+    <img class="img-1" src="img/3.png" alt="">
+    <div class="imgground">
+      <p class="pp">設計理念<br>動畫中的地球換場與移動代表者時代的演變，而場景中地球的歷險代表著現實中，我們的社會與地球的問題，而因為這個理念與和(SDGD)有著因果關係所以我們決定用互動式海報的形式呈現給大家。
+      </p>
+    </div>
+    <img class="img-1" src="img/2.png" alt="">
+    <div class="imgground">
+      <p class="pp">客群<br>希望可以運用在捷運站、博物館、學校等場所裡面，以立式展示機的方式呈現給大眾，使大家能多了解有關SDGs的議題。</p>
+    </div>
+    <img class="img-1" src="img/4.png" alt="">
+    <div class="imgground">
+      <p class="pp">設計原理<br>利用3D互動式海報帶領使用者了解SDGs，並利用手部偵測來跟網頁進行互動，讓使用者更能感受到與主題的連結。</p>
+    </div>
+
+    <div class="標題">
+      <div class="四大元素">四大元素</div>
+      <div class="標題內容">
+        <p class="P">System Fail
+        <p class="ppp">人類的疏失，導致現在全球性的問題</p>
+        </p>
+      </div>
+      <div class="標題內容">
+        <p class="P">心理學
+        <p class="ppp">發展心理學</p>
+        </p>
+      </div>
+      <div class="標題內容">
+        <p class="P">動態捕捉
+        <p class="ppp">開頭動畫</p>
+        </p>
+      </div>
+      <div class="標題內容">
+        <p class="P">未來元素
+        <p class="ppp">3D與手部偵測、SDGs</p>
+        </p>
+      </div>
+    </div>
+
+    <div class="四格">
+
+      <img class="四格格" src="img/S__30179552.jpg" alt="">
+      <img class="四格格" src="img/S__30179553.jpg" alt="">
+      <img class="四格格" src="img/S__30179548.jpg" alt="">
+      <img class="四格格" src="img/S__30179554.jpg" alt="">
+    </div>
+    <img src="img/smalllove.png" alt="" class="大圖">
+
+    <!-- <img src="img\5x\資產 1@5x.png" class="大圖" alt=""> -->
+    <div class="likecount" id="likecount"></div>
+
+
+    <input type="button" onmousedown="biglove()" src="img/smalllove.png" class="大圖" value="like" id="likebutten" style="position: absolute; bottom: 150px; width: 400px; height: 80px; border-radius: 100px;
+          z-index: 99999; font-size: 150%; letter-spacing: 0.3em; border: rgb(123, 123, 123);
+          color: rgb(128, 128, 128); font-weight: 700; ">
+
+    <input alt="Submit" width="48" height="48" style="transform: translateY(-500%); z-index: 999; opacity: 0;">
+
+
+
+    <img src="img/biglove.png" class="愛心" id="愛心" alt="">
+
+    <script>
+      const audio = new Audio("img/toyui.mp3");
+      const buttons = document.querySelectorAll("input");
+
+      buttons.forEach(button => {
+        button.addEventListener("click", () => {
+          audio.play();
+        });
+      });
+
+      var 愛心 = document.getElementById('愛心')
+      function biglove() {
+        愛心.classList.add("show")
+        setTimeout(function () {
+          愛心.classList.remove("show")
+        }, 200)
+      }
+    </script>
+
+
+
+  </main>
+
+
+</body>
+
+</html>

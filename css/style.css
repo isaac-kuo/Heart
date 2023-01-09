@@ -1,0 +1,381 @@
+html{
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    src: url(https://fonts.gstatic.com/s/notosanstc/v26/-nFkOG829Oofr2wohFbTp9i9uwYvDrVO3cuHnQmVtV4N3QDXzPiowFVyhy21F93pzxLWunL8lQ.119.woff2) format('woff2');
+    font-family: 'Noto Sans TC', sans-serif;
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+    user-select:none; /* standard syntax */
+    -webkit-user-select:none; /* for Chrome、Safari */
+    -moz-user-select:none; /* for Mozilla、Firefox */
+    
+}
+
+body{
+    overflow-x: hidden;
+    background: rgb(222, 222, 222);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+main{
+    transform: translateY(1%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+
+}
+.大圖{
+    transform: translateY(-40%);
+    width: 100%;
+    z-index: -1;
+}
+.愛心{
+    transform: translateY(-45%);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    display: none;
+}
+
+.愛{
+    z-index: 999;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-17%);
+    width: 150%;
+    display:none;
+    z-index: 2;
+}
+
+.show{
+    display: block;
+}
+
+.top-text{
+  
+    padding: 3%;
+    z-index: 10;
+    font-size: 60%;
+    position: absolute;
+    top: -30px;
+}
+.a{
+    left: 0;
+    letter-spacing: 0.3em;
+}
+.aa{
+    right: 0;
+    letter-spacing: 0.3em;
+}
+
+
+h3{
+    font-weight:500;
+    color: #fff;
+}
+h1{
+    text-align: center;
+    
+
+}
+
+.likecount{
+    position: absolute;
+     bottom: 0; 
+     display: block; 
+     transform: translateY(-90px);
+      color: white; 
+      letter-spacing: 0.2em; font-size: 190%;
+      font-weight: 900;
+}
+
+.img-1{
+    height: 50%;
+
+    width: 70%    
+}
+.imgground{
+    background: rgb(255, 255, 255);
+   width: 70%;
+   height: 200px;
+   margin-bottom: 10%;
+
+   
+}
+.big{
+transform: translateY(-250%);
+    font-weight: 900;
+font-size:100%;
+letter-spacing: 0.3em;
+}
+
+.bigg{
+    transform: translateY(-100%);
+    font-weight: 900;
+font-size:150%;
+letter-spacing: 0.3em;
+}
+
+
+p{
+    font-weight: 500;
+    font-size: 110%;
+    color: rgb(174, 174, 174);
+}
+.ppp{
+    font-size:50%;
+}
+.P{
+    font-weight: 600;
+    font-size:70%;
+}
+.pp{
+    margin: auto;
+    margin-top: 3.5%;
+    text-align: start;
+    line-height: 2em;
+    width: 80%;
+}
+
+.四格{
+    z-index: -1;
+    background-color: rgb(59, 59, 59);
+    padding: 30% 0%;
+    padding-top: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.四格格{
+    width: 35%;
+
+}
+.四大元素{
+    margin-bottom: 20%;
+}
+
+.標題{
+    scale: 1;
+    position: absolute;
+    margin-top: 870px;
+    margin-left: 18%;
+    opacity: 50%;
+    left: 0;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  font-size: 200%;
+    color: #fff;
+}
+
+.標題內容{
+    margin-bottom: 15%;
+  line-height: 25%;
+}
+
+/*  */
+
+.up{
+    
+    z-index: 5000;
+    display:flex;
+    justify-content: center;
+    top: 10%;
+    position: fixed;
+  transition: 0.5s;
+  background:none; width: 100%;
+
+  display: none;
+  
+  }
+  
+  #up-size{
+    
+    padding: 10%;
+    opacity: 100;
+    width: 30px;
+    height: 0px;
+    background: none;
+    width: 100%;
+    transition: ease 0.1s;
+  
+  }
+  
+  #up-size:hover{
+    
+     
+    padding: 8%;
+    opacity: 100;
+    width: 30px;
+    height: 73px;
+    background: none;
+    width: 100%;
+   
+  }
+  
+  
+  .down{
+    z-index: 5000;
+    display:flex;
+    justify-content: center;
+    bottom: 0;
+  transform: translateY(-200%);
+  
+    position: fixed;
+  transition: 0.5s;
+  background:none; width: 100%;
+
+  display: none;
+  
+  }
+  
+  #down-size{
+    transform:rotate(-10 50 100);
+    padding: 10%;
+    opacity: 100;
+    width: 30px;
+    height: 0px;
+    background: none;
+    width: 100%;
+    transition: ease 0.1s;
+  
+  }
+  
+  #down-size:hover{
+    padding: 8%;
+    opacity: 100;
+    width: 30px;
+    height: 70px;
+    background:none;
+    width: 100%;
+   
+  }
+
+  @media screen and (max-width:900px) { 
+    .imgground {
+        background: rgb(255, 255, 255);
+        width: 70%;
+        height: 250px;
+        margin-bottom: 10%;
+    }
+
+  }
+
+  @media screen and (max-width:600px) { 
+    .imgground {
+        background: rgb(255, 255, 255);
+        width: 70%;
+        height: 300px;
+        margin-bottom: 10%;
+    }
+
+    .標題{
+        scale: 0.9;
+        margin-top: 1018px;
+    }
+
+    .四格{
+        padding-top: 500px;
+    }
+    .top-text{
+        top: -22px;
+    }
+  }
+
+  @media screen and (max-width:450px) { 
+    .top-text{
+        top: -10px;
+       font-size: 20%;
+       font-weight: 600;
+    }
+    .大圖{
+        width: 150%;
+    }
+    .big{
+        transform: translateY(-300%);
+    }
+    p {
+        font-weight: 500;
+        font-size: 95%;
+    
+    }
+    .ppp {
+        font-size: 50%;
+        line-height: 150%;
+    }
+    .標題{
+        width: 75%;
+        scale:0.8;
+    }
+
+    .四格格 {
+        width: 55%;
+    }
+
+    .標題 {
+        scale: 0.8;
+        margin-top: 116px;
+    }
+
+  
+  }
+
+  @media screen and  (max-width: 1500px) {
+    .標題 {
+        scale: 1;
+        margin-top: 150px;
+    }
+
+    html{
+      
+        overflow-y: hidden;
+    }
+    body{
+        overflow-y: hidden;
+    }
+
+    .up{
+        z-index: 5000;
+        display:flex;
+        justify-content: center;
+        top: 0%;
+        transform: translateX(-7%);
+        position: fixed;
+      transition: 0.5s;
+      background:none;
+      width: 100%;
+    
+      display: block;
+      
+      }
+
+      .down{
+        
+        z-index: 5000;
+        display:flex;
+        justify-content: center;
+        bottom: 0;
+      transform: translateY(0%);
+      transform: translateX(-7%);
+        position: fixed;
+      transition: 0.5s;
+      background:none; width: 100%;
+    
+      display:block;
+      
+      }
+    .bigpx{
+        transform: translateY(-10%);
+        width: 100%;
+        z-index: -1;
+    }
+
+   }
