@@ -293,7 +293,10 @@ p{
     }
   }
 
-  @media screen and (max-width:450px) { 
+
+
+
+  @media screen and (max-width:330px) { 
     .top-text{
         top: -10px;
        font-size: 20%;
@@ -333,6 +336,10 @@ p{
 
   
   }
+
+
+
+
 
   @media screen and  (max-width: 1500px) {
     .標題 {
@@ -392,3 +399,59 @@ p{
     }
 
    }
+
+   @media screen and (max-width:450px) { 
+    .top-text{
+        top: -10px;
+       font-size: 20%;
+       font-weight: 600;
+    }
+    .大圖{
+        width: 150%;
+    }
+    .big{
+        transform: translateY(-300%);
+    }
+    p {
+        font-weight: 500;
+        font-size: 95%;
+    
+    }
+    .ppp {
+        font-size: 50%;
+        line-height: 150%;
+    }
+   
+    .四格格 {
+        width: 55%;
+    }
+    .四格 {
+        padding-top: 554px;
+    }
+    .標題 {
+        scale: 0.8;
+        margin-top: -280px;
+    }
+
+    .likecount {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        transform: translateY(-180px);
+        color: white;
+        letter-spacing: 0.2em;
+        font-size: 90%;
+        font-weight: 900;
+    }
+    .愛心 {
+        transform: translateY(-141px);
+        width: 150%;
+        position: absolute;
+        bottom: 0;
+        z-index: 999;
+        display: none;
+    }
+  
+
+  
+  }
